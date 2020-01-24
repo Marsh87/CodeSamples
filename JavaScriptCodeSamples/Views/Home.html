@@ -74,6 +74,14 @@
             <div class="form-group label-padding">
                 <button type="button" class="btn btn-primary" onclick="clearCommentSection()">Hide Feedback section</button>
             </div>
+            <div class="form-group label-padding">
+                <label> Employee Detail:</label>
+                <label id="employeeDetail"> </label>
+            </div>
+            <div class="form-group label-padding">
+                <label> Vehicle Detail:</label>
+                <label id="vehicleDetail"> </label>
+            </div>
         </form>
     </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
@@ -82,5 +90,22 @@
     <script src="../Scripts/jquery-3.4.1.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/Home.js"></script>
+<script src="../Scripts/Employee.js"></script>
+<script>
+    var employee1 = new Employee(101, "Mahesh");
+    document.getElementById("employeeDetail").innerText = employee1.detail();
+
+    function Vehicle(make, model, colour) {
+        this.make = make;
+        this.model = model;
+        this.colour = colour;
+    }
+
+    Vehicle.prototype.fullDescription = function() {
+        return this.make +" "+this.model+ " "+this.colour;
+    }
+    var vehicle = new Vehicle("Bmw", "1 series", "silver");
+    document.getElementById("vehicleDetail").innerText = vehicle.fullDescription();
+</script>
 </body>
 </html>
