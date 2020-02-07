@@ -92,9 +92,13 @@
     <script src="../Scripts/Home.js"></script>
 <script src="../Scripts/Employee.js"></script>
 <script>
+    var carRegistrationNumber = "ASD123";
+    // Constructor Example
     var employee1 = new Employee(101, "Mahesh");
     document.getElementById("employeeDetail").innerText = employee1.detail();
 
+
+    // Prototype example
     function Vehicle(make, model, colour) {
         this.make = make;
         this.model = model;
@@ -106,6 +110,48 @@
     }
     var vehicle = new Vehicle("Bmw", "1 series", "silver");
     document.getElementById("vehicleDetail").innerText = vehicle.fullDescription();
+
+    //Scope
+    function displayCarName() {
+        var carName = "Volvo";
+        Console.log(carName);
+    }
+
+    displayPartName();
+    console.log(partName);
+
+    function  displayPartName() {
+        partName = "Radiator";
+        Console.log(carRegistrationNumber);
+    }
+
+    function calculateRepairCost() {
+        var radiatorCost = 200;
+        return radiatorCost * 10;
+    }
+
+    var inductionKit = 500;
+    function calculateInstallation() {
+        return inductionKit * 2;
+    }
+
+    // Closures
+    function calculate() {
+        var total = 0;
+        function increment() { total += 1; }
+        increment();
+        return total;
+    }
+
+    var age = (function() {
+        var currentAge = 0;
+        return function () { currentAge += 1;return currentAge }
+    })();
+
+    age();
+    age();
+    age();
+
 </script>
 </body>
 </html>

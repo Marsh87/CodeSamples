@@ -1,4 +1,5 @@
-﻿class Employee {
+﻿// Class Example
+class Employee {
     constructor(id,name) {
         this.id = id;
         this.name = name;
@@ -8,3 +9,4 @@
         return this.id + "" + this.name;
     }
 }
+
