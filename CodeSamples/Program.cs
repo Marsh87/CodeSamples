@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using CodeSamples.Helpers;
 using CodeSamples.Models;
 using CodeSamples.Services;
 
@@ -28,6 +30,46 @@ namespace CodeSamples
             calculateRefund(new decimal(190.02));
 
             DoSomethingWithDelegate(calculateRefund,1500);
+
+            var buildings = buildingService.GetAllBuildings();
+            DisplayBuildingName(buildings.GetEnumerator());
+
+            var doctor = CreateDoctor();
+            var doctorEnumerable = new DoctorEnumerable(new List<Doctor>() {doctor});
+            DisplayDoctorName(doctorEnumerable.GetEnumerator());
+
+        }
+
+        private static Doctor CreateDoctor()
+        {
+            var doctor = new Doctor()
+            {
+                DateOfBirth = new DateTime(1987, 7, 6),
+                FirstName = "Mister",
+                GenderId = 1,
+                SurName = "Doctor",
+                TitleId = 3
+            };
+            return doctor;
+        }
+
+        public static void DisplayBuildingName(IEnumerator<Building> buildingEnumerator)
+        {
+            while (buildingEnumerator.MoveNext())
+            {
+                var name = buildingEnumerator.Current?.Name;
+                Console.WriteLine(name);
+            }
+
+        }
+        public static void DisplayDoctorName(IEnumerator<string> buildingEnumerator)
+        {
+            while (buildingEnumerator.MoveNext())
+            {
+                var name = buildingEnumerator.Current;
+                Console.WriteLine(name);
+            }
+
         }
 
         public static void DoSomethingWithDelegate(CalculateAmount calculateAmount, decimal interest)

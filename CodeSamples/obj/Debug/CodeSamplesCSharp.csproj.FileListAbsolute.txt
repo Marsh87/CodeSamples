@@ -3,6 +3,8 @@ F:\Deliberate Practice\CodeSamples\CodeSamples\bin\Debug\CodeSamples.exe
 F:\Deliberate Practice\CodeSamples\CodeSamples\bin\Debug\CodeSamples.pdb
 F:\Deliberate Practice\CodeSamples\CodeSamples\bin\Debug\SimpleInjector.dll
 F:\Deliberate Practice\CodeSamples\CodeSamples\bin\Debug\SimpleInjector.xml
-F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamplesCSharp.csprojResolveAssemblyReference.cache
 F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamples.exe
 F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamples.pdb
+F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamplesCSharp.csprojAssemblyReference.cache
+F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamplesCSharp.csproj.CoreCompileInputs.cache
+F:\Deliberate Practice\CodeSamples\CodeSamples\obj\Debug\CodeSamplesCSharp.csproj.CopyComplete

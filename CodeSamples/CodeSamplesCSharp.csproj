@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap.cs" />
+    <Compile Include="Helpers\DoctorEnumerable.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Building.cs" />
     <Compile Include="Models\TddClaim.cs" />
