@@ -43,9 +43,12 @@ select * from Customer
 select O.OrderDescription, O.Quantity, O.Cost from Orders O  INNER JOIN Customer c on c.Id = O.CustomerId
 Where c.FirstName ='Mahesh'
 
+USE MyAwesomeDatabase;
+GO
+
+Update Customer set Email ='newmail@gmail.com'  where LastName LIKE '%Moodley%'
+
+select * from Customer where LastName LIKE '%Moodley%'
 
 
-
-
-
-
+Delete from Orders where OrderDescription LIKE '%I9%'
