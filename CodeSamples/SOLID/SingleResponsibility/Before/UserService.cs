@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using CodeSamples.SOLID.SingleResponsibility.Models;
 
 namespace CodeSamples.SOLID.SingleResponsibility.Before
 {

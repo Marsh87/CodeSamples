@@ -1,14 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CodeSamples.SOLID.SingleResponsibility.Before
+namespace CodeSamples.SOLID.SingleResponsibility.After
 {
     public class EmailService:IEmailService
     {
+        private readonly SmtpClient _smtpClient;
+
+        public EmailService(SmtpClient smtpClient)
+        {
+            _smtpClient = smtpClient;
+        }
+
         public bool ValidateEmail(string email)
         {
             throw new NotImplementedException();
@@ -18,12 +21,5 @@ namespace CodeSamples.SOLID.SingleResponsibility.Before
         {
             throw new NotImplementedException();
         }
-    }
-
-    public interface IEmailService
-    {
-        bool ValidateEmail(string email);
-
-        void SendEmail(MailMessage message);
     }
 }

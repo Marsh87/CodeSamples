@@ -62,7 +62,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BuildingService.cs" />
-    <Compile Include="SOLID\SingleResponsibility\Before\EmailService.cs" />
+    <Compile Include="SOLID\SingleResponsibility\After\EmailService.cs" />
+    <Compile Include="SOLID\SingleResponsibility\After\IEmailService.cs" />
+    <Compile Include="SOLID\SingleResponsibility\After\UserService.cs" />
     <Compile Include="SOLID\SingleResponsibility\Models\User.cs" />
     <Compile Include="SOLID\SingleResponsibility\Before\UserService.cs" />
   </ItemGroup>
@@ -76,7 +78,6 @@
     <Folder Include="SOLID\InterfaceSegregationPrinciple\" />
     <Folder Include="SOLID\LiskovSubstitution\" />
     <Folder Include="SOLID\OpenClosed\" />
-    <Folder Include="SOLID\SingleResponsibility\After\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

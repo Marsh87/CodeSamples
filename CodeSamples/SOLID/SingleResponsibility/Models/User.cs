@@ -1,14 +1,14 @@
-﻿namespace CodeSamples.SOLID.SingleResponsibility.Before
+﻿namespace CodeSamples.SOLID.SingleResponsibility.Models
 {
-    internal class User
+    public class User
     {
-        private string email;
-        private string password;
+        private string _email;
+        private string _password;
 
         public User(string email, string password)
         {
-            this.email = email;
-            this.password = password;
+            this._email = email;
+            this._password = password;
         }
     }
 }
