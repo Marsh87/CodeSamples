@@ -62,6 +62,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BuildingService.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\After\IDatabase.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\After\IDiscount.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\After\LiskovAfter.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Before\LiskovBefore.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Models\Customer.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Models\Database.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Models\Enquiry.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Models\GoldCustomer.cs" />
+    <Compile Include="SOLID\LiskovSubstitution\Models\SilverCustomer.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\EmailService.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\IEmailService.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\UserService.cs" />
@@ -76,7 +85,6 @@
     <Folder Include="Interfaces\" />
     <Folder Include="SOLID\DependencyInjection\" />
     <Folder Include="SOLID\InterfaceSegregationPrinciple\" />
-    <Folder Include="SOLID\LiskovSubstitution\" />
     <Folder Include="SOLID\OpenClosed\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
