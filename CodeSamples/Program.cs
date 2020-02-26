@@ -47,7 +47,7 @@ namespace CodeSamples
                 DateOfBirth = new DateTime(1987, 7, 6),
                 FirstName = "Mister",
                 GenderId = 1,
-                SurName = "Doctor",
+                Surname = "Doctor",
                 TitleId = 3
             };
             return doctor;

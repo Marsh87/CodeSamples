@@ -83,6 +83,11 @@
     <Compile Include="SOLID\LiskovSubstitution\Models\Enquiry.cs" />
     <Compile Include="SOLID\LiskovSubstitution\Models\GoldCustomer.cs" />
     <Compile Include="SOLID\LiskovSubstitution\Models\SilverCustomer.cs" />
+    <Compile Include="SOLID\OpenClosed\After\AreaCalculator.cs" />
+    <Compile Include="SOLID\OpenClosed\After\Circle.cs" />
+    <Compile Include="SOLID\OpenClosed\After\Rectangle.cs" />
+    <Compile Include="SOLID\OpenClosed\After\Shape.cs" />
+    <Compile Include="SOLID\OpenClosed\Before\OpenClosedBefore.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\EmailService.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\IEmailService.cs" />
     <Compile Include="SOLID\SingleResponsibility\After\UserService.cs" />
@@ -95,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="SOLID\OpenClosed\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

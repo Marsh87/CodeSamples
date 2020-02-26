@@ -10,7 +10,7 @@ namespace CodeSamples.Models
     {
         public int TitleId { get; set; }
         public string FirstName { get; set; }
-        public string SurName { get; set; }
+        public string Surname { get; set; }
         public DateTime DateOfBirth  { get; set; }
         public  int GenderId { get; set; }
     }
