@@ -19,9 +19,9 @@ namespace CodeSamples
            Bootstrap.Start();
             var hospital = CreateHospital();
             var buildingService = Bootstrap.Container.GetInstance<IBuldingService>();
-            buildingService.CreateBuilding(hospital);
+            Console.WriteLine(buildingService.CreateBuilding(hospital));
             UpdateClaim<TddClaim> updateClaim = new UpdateClaim<TddClaim>(new TddClaim());
-            updateClaim.genericMethod();
+            Console.WriteLine(updateClaim.genericMethod());
 
             CalculateAmount calculatePremium = CalculatePremium;
             calculatePremium(200);
