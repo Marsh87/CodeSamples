@@ -1,4 +1,5 @@
-﻿using System;
+﻿// TODO unused usings!
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -15,6 +16,10 @@ namespace CodeSamples
     //      - TCP/IP & HTTP 
     //      - Basics of SQL (SELECT, WHERE, JOIN, UPDATE, DELETE)
     //      - Set theory
+    //      - .NET basics 
+    // TODO I'd like to go over with you in our next session which
+    //      code is demoing inheritance & polymorphism because if it is
+    //      the Employee/Doctor/Nurse it will need a bit of improvement
     class Program
     {
         public delegate void CalculateAmount(decimal value);
