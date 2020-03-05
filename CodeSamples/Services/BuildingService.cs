@@ -15,6 +15,7 @@ namespace CodeSamples.Services
             return building  is Hospital ? "Created Hospital" : "Plain old building created";
         }
 
+        // TODO you could use yield return here. Is there a reason you used a list?
         public IEnumerable<Building> GetAllBuildings()
         {
             var buildings = new List<Building>();
