@@ -8,6 +8,8 @@ using CodeSamples.SOLID.LiskovSubstitution.Models;
 
 namespace CodeSamples.SOLID.LiskovSubstitution.After
 {
+    // TODO it feels like this example isn't finished. Let's please
+    //      discuss Liskov in our next one on one
     public class LiskovAfter
     {
         public void ParseCustomers()

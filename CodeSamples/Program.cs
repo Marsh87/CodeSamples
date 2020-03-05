@@ -11,6 +11,10 @@ using CodeSamples.Services;
 
 namespace CodeSamples
 {
+    // TODO things I couldn't find code or notes or diagrams for:
+    //      - TCP/IP & HTTP 
+    //      - Basics of SQL (SELECT, WHERE, JOIN, UPDATE, DELETE)
+    //      - Set theory
     class Program
     {
         public delegate void CalculateAmount(decimal value);
@@ -37,6 +41,7 @@ namespace CodeSamples
             var doctor = CreateDoctor();
             var doctorEnumerable = new DoctorEnumerable(new List<Doctor>() {doctor});
             DisplayDoctorName(doctorEnumerable.GetEnumerator());
+            Console.ReadLine();
 
         }
 
