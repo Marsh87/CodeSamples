@@ -1,4 +1,10 @@
-﻿function calculateProfit() {
+﻿// TODO I haven't been able to find examples of
+//      - Variable / function Scope
+//      - Closures
+//      - Prototypes
+//      - Constructors
+
+function calculateProfit() {
     var revenue = document.getElementById("revenue").value;
     var operatingCost = document.getElementById("operatingCost").value;
     var profit = 0;
