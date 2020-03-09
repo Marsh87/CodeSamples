@@ -14,7 +14,6 @@ namespace CodeSamples
 {
     // TODO things I couldn't find code or notes or diagrams for:
     //      - TCP/IP & HTTP 
-    //      - Basics of SQL (SELECT, WHERE, JOIN, UPDATE, DELETE)
     //      - Set theory
     //      - .NET basics 
     // TODO I'd like to go over with you in our next session which
