@@ -18,12 +18,12 @@ namespace CodeSamples.SOLID.SingleResponsibility.After
             _emailService = emailService;
         }
 
-        public void Register(string email, string password)
+        public async Task Register(string email, string password)
         {
             if (!_emailService.ValidateEmail(email))
                 throw new ValidationException("Email is not an email");
             var user = new User(email, password);
-            _emailService.SendEmail(new MailMessage("mymail@mail.com", email) { Subject = "New Mail" });
+           await _emailService.SendEmail(new MailMessage("mymail@mail.com", email) { Subject = "New Mail" });
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Mail;
+using System.Threading.Tasks;
 
 namespace CodeSamples.SOLID.SingleResponsibility.After
 {
@@ -16,12 +17,12 @@ namespace CodeSamples.SOLID.SingleResponsibility.After
         //      to indicate that there will be some implementation.
         public bool ValidateEmail(string email)
         {
-            throw new NotImplementedException();
+            return email.Contains("@");
         }
 
-        public void SendEmail(MailMessage message)
+        public async Task SendEmail(MailMessage message)
         {
-            throw new NotImplementedException();
+            await _smtpClient.SendMailAsync(message);
         }
     }
 }
