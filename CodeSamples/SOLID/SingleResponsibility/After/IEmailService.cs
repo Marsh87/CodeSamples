@@ -1,4 +1,5 @@
 ﻿using System.Net.Mail;
+using System.Threading.Tasks;
 
 namespace CodeSamples.SOLID.SingleResponsibility.After
 {
@@ -6,6 +7,6 @@ namespace CodeSamples.SOLID.SingleResponsibility.After
     {
         bool ValidateEmail(string email);
 
-        void SendEmail(MailMessage message);
+        Task SendEmail(MailMessage message);
     }
 }
