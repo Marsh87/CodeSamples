@@ -8,6 +8,4 @@
             return sales - 20;
         }
     }
-
-
 }
