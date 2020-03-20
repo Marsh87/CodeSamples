@@ -6,7 +6,7 @@ namespace CodeSamples.SOLID.LiskovSubstitution.Models
     {
         public void Add()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Add to the database");
         }
     }
 }
