@@ -71,6 +71,7 @@
     <Compile Include="SOLID\InterfaceSegregationPrinciple\After\IFlyable.cs" />
     <Compile Include="SOLID\InterfaceSegregationPrinciple\After\IMovable.cs" />
     <Compile Include="SOLID\InterfaceSegregationPrinciple\After\IToy.cs" />
+    <Compile Include="SOLID\InterfaceSegregationPrinciple\After\ToyCar.cs" />
     <Compile Include="SOLID\InterfaceSegregationPrinciple\After\ToyPlane.cs" />
     <Compile Include="SOLID\InterfaceSegregationPrinciple\Before\IWrongToy.cs" />
     <Compile Include="SOLID\InterfaceSegregationPrinciple\Before\ToyHouse.cs" />

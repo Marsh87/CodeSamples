@@ -13,24 +13,26 @@ namespace CodeSamples.SOLID.InterfaceSegregationPrinciple.After
     //      or a comment saying "some valid implementation"
     public class ToyPlane:IToy,IFlyable,IMovable
     {
+        private double _price;
+        private string _colour;
         public void setPrice(double price)
         {
-            throw new NotImplementedException();
+            _price = price;
         }
 
         public void setColour(string colour)
         {
-            throw new NotImplementedException();
+            _colour = colour;
         }
 
         public void Fly()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("I am flying");
         }
 
         public void Move()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("I am moving");
         }
     }
 }
