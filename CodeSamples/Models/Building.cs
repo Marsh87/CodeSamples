@@ -14,5 +14,10 @@ namespace CodeSamples.Models
         public  string Description { get; set; }
         public  Address Address { get; set; }
         public IEnumerable<Room> Rooms { get; set; }
+
+        public virtual string GetDescription()
+        {
+            return this.Description;
+        }
     }
 }

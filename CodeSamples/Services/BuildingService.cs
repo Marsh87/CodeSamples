@@ -8,18 +8,14 @@ using CodeSamples.Models;
 
 namespace CodeSamples.Services
 {
-    public class BuildingService:IBuldingService
+    public class BuildingService : IBuldingService
     {
-        public string CreateBuilding(Building building)
-        {
-            return building  is Hospital ? "Created Hospital" : "Plain old building created";
-        }
 
         // TODO you could use yield return here. Is there a reason you used a list?
         public IEnumerable<Building> GetAllBuildings()
         {
             var buildings = new List<Building>();
-            var building1  = new  Building()
+            var building1 = new Building()
             {
                 Address = new Address()
                 {
@@ -35,7 +31,7 @@ namespace CodeSamples.Services
 
             };
 
-            var building2  = new  Building()
+            var building2 = new Building()
             {
                 Address = new Address()
                 {
@@ -58,9 +54,6 @@ namespace CodeSamples.Services
 
     public interface IBuldingService
     {
-        string CreateBuilding(Building building);
-
         IEnumerable<Building> GetAllBuildings();
-
     }
 }

@@ -16,6 +16,8 @@ namespace CodeSamples
     //      - TCP/IP & HTTP 
     //      - Set theory
     //      - .NET basics 
+    // Basic notes about topics 
+
     // TODO I'd like to go over with you in our next session which
     //      code is demoing inheritance & polymorphism because if it is
     //      the Employee/Doctor/Nurse it will need a bit of improvement
@@ -27,7 +29,14 @@ namespace CodeSamples
            Bootstrap.Start();
             var hospital = CreateHospital();
             var buildingService = Bootstrap.Container.GetInstance<IBuldingService>();
-            Console.WriteLine(buildingService.CreateBuilding(hospital));
+
+            // Implement polymorphism by implementing an overridden method 
+            foreach(var building in buildingService.GetAllBuildings())
+            {
+                Console.WriteLine(building.GetDescription());
+            }
+
+            Console.WriteLine(hospital.GetDescription());
             UpdateClaim<TddClaim> updateClaim = new UpdateClaim<TddClaim>(new TddClaim());
             Console.WriteLine(updateClaim.genericMethod());
 
@@ -43,10 +52,10 @@ namespace CodeSamples
             DisplayBuildingName(buildings.GetEnumerator());
 
             var doctor = CreateDoctor();
+            // Implement polymorphism in the enumerator...create a employee enumerator
             var doctorEnumerable = new DoctorEnumerable(new List<Doctor>() {doctor});
             DisplayDoctorName(doctorEnumerable.GetEnumerator());
             Console.ReadLine();
-
         }
 
         private static Doctor CreateDoctor()
