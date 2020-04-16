@@ -26,12 +26,12 @@ namespace CodeSamples
         public delegate void CalculateAmount(decimal value);
         static void Main(string[] args)
         {
-           Bootstrap.Start();
+            Bootstrap.Start();
             var hospital = CreateHospital();
             var buildingService = Bootstrap.Container.GetInstance<IBuldingService>();
 
             // Implement polymorphism by implementing an overridden method 
-            foreach(var building in buildingService.GetAllBuildings())
+            foreach (var building in buildingService.GetAllBuildings())
             {
                 Console.WriteLine(building.GetDescription());
             }
@@ -46,16 +46,32 @@ namespace CodeSamples
             CalculateAmount calculateRefund = CalculateRefund;
             calculateRefund(new decimal(190.02));
 
-            DoSomethingWithDelegate(calculateRefund,1500);
+            DoSomethingWithDelegate(calculateRefund, 1500);
 
             var buildings = buildingService.GetAllBuildings();
             DisplayBuildingName(buildings.GetEnumerator());
 
             var doctor = CreateDoctor();
-            // Implement polymorphism in the enumerator...create a employee enumerator
-            var doctorEnumerable = new DoctorEnumerable(new List<Doctor>() {doctor});
-            DisplayDoctorName(doctorEnumerable.GetEnumerator());
+            var nurse = CreateNurse();
+            var doctorEnumerable = new DoctorEnumerable(new List<Doctor>() { doctor });
+            DisplayNames(doctorEnumerable.GetEnumerator());
+
+            var employees = CreateEmployees(doctor, nurse);
+            var employeeEnumerable = new EmployeeEnumerable(employees);
+            DisplayNames(employeeEnumerable.GetEnumerator());
             Console.ReadLine();
+        }
+
+        private static List<Employee> CreateEmployees(Doctor doctor, Nurse nurse) => new List<Employee>() {doctor,nurse};
+
+        private static Nurse CreateNurse()
+        {
+            var nurse = new Nurse()
+            {
+                FirstName = "Mary",
+                Surname = "Elize"
+            };
+            return nurse;
         }
 
         private static Doctor CreateDoctor()
@@ -80,11 +96,11 @@ namespace CodeSamples
             }
 
         }
-        public static void DisplayDoctorName(IEnumerator<string> buildingEnumerator)
+        public static void DisplayNames(IEnumerator<string> nameEnumerator)
         {
-            while (buildingEnumerator.MoveNext())
+            while (nameEnumerator.MoveNext())
             {
-                var name = buildingEnumerator.Current;
+                var name = nameEnumerator.Current;
                 Console.WriteLine(name);
             }
 
@@ -97,11 +113,11 @@ namespace CodeSamples
 
         public static void CalculatePremium(decimal premium)
         {
-            Console.WriteLine("Number:{0,-12:N0}",premium);
+            Console.WriteLine("Number:{0,-12:N0}", premium);
         }
         public static void CalculateRefund(decimal refund)
         {
-            Console.WriteLine("Number:{0,-12:N0}",refund);
+            Console.WriteLine("Number:{0,-12:N0}", refund);
         }
 
         private static Hospital CreateHospital()
