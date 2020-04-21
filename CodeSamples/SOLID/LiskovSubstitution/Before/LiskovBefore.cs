@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using CodeSamples.SOLID.LiskovSubstitution.Models;
+using System.Collections.Generic;
 
 namespace CodeSamples.SOLID.LiskovSubstitution.Before
 {
     public partial class LiskovBefore
     {
-        /*public class CustomerParser
+        public class CustomerParser
         {
             void ParseCustomer()
             {
@@ -13,7 +14,7 @@ namespace CodeSamples.SOLID.LiskovSubstitution.Before
                 {
                     new GoldCustomer(),
                     new SilverCustomer(),
-                    new Enquiry()
+                    //new Enquiry() Enquiry use to inhertit from Customer in the Before Example
                 };
 
                 foreach (Customer c in customers)
@@ -21,6 +22,6 @@ namespace CodeSamples.SOLID.LiskovSubstitution.Before
                     c.Add(database);
                 }
             }
-        }*/
+        }
     }
 }
