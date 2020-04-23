@@ -3,7 +3,7 @@
 
     public class SilverCustomer : Customer
     {
-        public new int Discount(int sales)
+        public override double Discount(double sales)
         {
             return sales - 20;
         }

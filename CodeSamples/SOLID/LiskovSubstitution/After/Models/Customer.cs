@@ -6,7 +6,7 @@ namespace CodeSamples.SOLID.LiskovSubstitution.Models
 {
     public class Customer:IDiscount,IDatabase
     {
-        public int Discount(int sales)
+        public virtual double Discount(double sales)
         {
             return sales;
         }

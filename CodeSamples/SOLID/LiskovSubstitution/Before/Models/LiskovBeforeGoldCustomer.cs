@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeSamples.SOLID.LiskovSubstitution.After
+namespace CodeSamples.SOLID.LiskovSubstitution.Before.Models
 {
-     interface IDiscount
+    public class LiskovBeforeGoldCustomer:LiskovBeforeCustomer
     {
-        double Discount(double sales);
     }
 }
