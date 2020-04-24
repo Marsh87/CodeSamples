@@ -18,7 +18,6 @@ namespace CodeSamples
             var hospital = CreateHospital();
             var buildingService = Bootstrap.Container.GetInstance<IBuldingService>();
 
-            // Implement polymorphism by implementing an overridden method 
             foreach (var building in buildingService.GetAllBuildings())
             {
                 Console.WriteLine(building.GetDescription());
