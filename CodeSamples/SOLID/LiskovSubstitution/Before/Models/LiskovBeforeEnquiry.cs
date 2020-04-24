@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CodeSamples.SOLID.LiskovSubstitution.Before.Models
 {
+
     public class LiskovBeforeEnquiry:LiskovBeforeCustomer
     {
 
@@ -15,6 +16,7 @@ namespace CodeSamples.SOLID.LiskovSubstitution.Before.Models
             return base.Discount(TotalSales) - 5;
         }
 
+        // This override means that Enquriy cannot be substituted for other descendents on Customer
         public override void Add(Database database)
         {
             throw new Exception("Not allowed");
