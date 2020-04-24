@@ -7,14 +7,8 @@ using CodeSamples.Services;
 namespace CodeSamples
 {
     // TODO things I couldn't find code or notes or diagrams for:
-    //      - TCP/IP & HTTP 
     //      - Set theory
-    //      - .NET basics 
-    // Basic notes about topics 
 
-    // TODO I'd like to go over with you in our next session which
-    //      code is demoing inheritance & polymorphism because if it is
-    //      the Employee/Doctor/Nurse it will need a bit of improvement
     class Program
     {
         public delegate void CalculateAmount(decimal value);

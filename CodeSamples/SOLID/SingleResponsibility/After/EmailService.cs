@@ -13,8 +13,6 @@ namespace CodeSamples.SOLID.SingleResponsibility.After
             _smtpClient = smtpClient;
         }
 
-        // TODO again please do something other than throw a NotImplemented exception
-        //      to indicate that there will be some implementation.
         public bool ValidateEmail(string email)
         {
             return email.Contains("@");
