@@ -10,8 +10,6 @@ namespace CodeSamples.Services
 {
     public class BuildingService : IBuldingService
     {
-
-        // TODO you could use yield return here. Is there a reason you used a list?
         public IEnumerable<Building> GetAllBuildings()
         {
             var buildings = new List<Building>();

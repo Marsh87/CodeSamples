@@ -14,8 +14,7 @@ namespace CodeSamples.Models
 
         public override string GetDescription()
         {
-            // Alter the behaviour by adding a suffix
-            return base.GetDescription();
+            return base.GetDescription() + ":1234";
         }
     }
 }

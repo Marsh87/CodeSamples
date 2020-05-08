@@ -6,9 +6,6 @@ using CodeSamples.Services;
 
 namespace CodeSamples
 {
-    // TODO things I couldn't find code or notes or diagrams for:
-    //      - Set theory
-
     class Program
     {
         public delegate void CalculateAmount(decimal value);
