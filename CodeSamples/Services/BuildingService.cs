@@ -12,7 +12,6 @@ namespace CodeSamples.Services
     {
         public IEnumerable<Building> GetAllBuildings()
         {
-            var buildings = new List<Building>();
             var building1 = new Building()
             {
                 Address = new Address()
@@ -28,7 +27,7 @@ namespace CodeSamples.Services
                 Name = "The Ritz"
 
             };
-
+            yield return building1;
             var building2 = new Building()
             {
                 Address = new Address()
@@ -43,10 +42,8 @@ namespace CodeSamples.Services
                 Id = 1,
                 Name = "The Kanto Gym"
 
-            };
-            buildings.Add(building1);
-            buildings.Add(building2);
-            return buildings;
+            };       
+            yield return building2;
         }
     }
 

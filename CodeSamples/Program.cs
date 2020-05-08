@@ -6,6 +6,11 @@ using CodeSamples.Services;
 
 namespace CodeSamples
 {
+    //Excercise for Brendon
+    //Use yield return in a for loop
+    /*Make a method that will take in a quantity and then return that many items as an IEnumerable were 
+    those items are the current date time as a string and 
+    only yield and item every second(cannot use a list or an array)*/
     class Program
     {
         public delegate void CalculateAmount(decimal value);
@@ -15,7 +20,8 @@ namespace CodeSamples
             var hospital = CreateHospital();
             var buildingService = Bootstrap.Container.GetInstance<IBuldingService>();
 
-            foreach (var building in buildingService.GetAllBuildings())
+            IEnumerable<Building> building1 = buildingService.GetAllBuildings();
+            foreach (var building in building1)
             {
                 Console.WriteLine(building.GetDescription());
             }
