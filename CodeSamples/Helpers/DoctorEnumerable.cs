@@ -8,9 +8,6 @@ using CodeSamples.Models;
 
 namespace CodeSamples.Helpers
 {
-    // TODO this is good, however, let's do something that alters the
-    //      enumerator behaviour, right now it just does what the
-    //      underlying List's enumerator does.
     public class DoctorEnumerable:IEnumerable
     {
         private readonly List<Doctor> _doctors;
