@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 using CodeSamples.Helpers;
 using CodeSamples.Models;
 using CodeSamples.Services;
@@ -10,7 +11,7 @@ namespace CodeSamples
     //Use yield return in a for loop
     /*Make a method that will take in a quantity and then return that many items as an IEnumerable were 
     those items are the current date time as a string and 
-    only yield and item every second(cannot use a list or an array)*/
+    only yield an item every second(cannot use a list or an array)*/
     class Program
     {
         public delegate void CalculateAmount(decimal value);
@@ -49,6 +50,13 @@ namespace CodeSamples
             var employees = CreateEmployees(doctor, nurse);
             var employeeEnumerable = new EmployeeEnumerable(employees);
             DisplayNames(employeeEnumerable.GetEnumerator());
+
+            var datesEverySecond = GetDateEverySecond(5);
+            foreach (var date in datesEverySecond)
+            {
+                Console.WriteLine(date);
+            }
+
             Console.ReadLine();
         }
 
@@ -117,6 +125,14 @@ namespace CodeSamples
                 Name = "Umhlatuzana Hospital",
                 Description = "Some Hospital"
             };
+        }
+        public static IEnumerable<string> GetDateEverySecond(int numberofIterations)
+        {
+            for(int i =0; i< numberofIterations; i++)
+            {
+                Thread.Sleep(1000);
+                yield return DateTime.Now.ToString();
+            }
         }
     }
 }
