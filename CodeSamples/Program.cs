@@ -29,7 +29,7 @@ namespace CodeSamples
 
             Console.WriteLine(hospital.GetDescription());
             UpdateClaim<TddClaim> updateClaim = new UpdateClaim<TddClaim>(new TddClaim());
-            Console.WriteLine(updateClaim.genericMethod());
+            Console.WriteLine(updateClaim.Execute());
 
             CalculateAmount calculatePremium = CalculatePremium;
             calculatePremium(200);

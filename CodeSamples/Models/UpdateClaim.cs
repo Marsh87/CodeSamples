@@ -16,7 +16,7 @@ namespace CodeSamples.Models
         }
 
         // TODO please give this a better name, perhaps Execute
-        public T genericMethod()
+        public T Execute()
         {
             Console.WriteLine("Return type:{0}, value {1}", typeof(T).ToString(),genericMemberVariable);
             return genericMemberVariable;
