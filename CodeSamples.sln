@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptCodeSamples", "Ja
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicTypeCSharpExample", "DynamicTypeCSharpExample\DynamicTypeCSharpExample.csproj", "{B7B51558-B8EC-4E1B-B712-564CBFA716FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionCSharpExample", "ReflectionCSharpExample\ReflectionCSharpExample.csproj", "{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B7B51558-B8EC-4E1B-B712-564CBFA716FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B51558-B8EC-4E1B-B712-564CBFA716FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B51558-B8EC-4E1B-B712-564CBFA716FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
