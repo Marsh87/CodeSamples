@@ -36,6 +36,30 @@ namespace ReflectionCSharpExample
                                   member.MemberType + "  " + member.Name);
             }
 
+            var methodInfos = type3.GetMethods();
+
+            foreach (var methodinfo in methodInfos)
+            {
+                Console.WriteLine(methodinfo.Name);
+            }
+
+            var methodInfo = type3.GetMethod("GetPriceIncludingVat");
+            if (methodInfo is not null) Console.WriteLine(methodInfo.Name);
+
+            var fieldInfos = type3.GetFields();
+
+            foreach (var fieldInfo in fieldInfos)
+            {
+                Console.WriteLine(fieldInfo.Name);
+            }
+
+            var propertyInfos = type3.GetProperties();
+
+            foreach (var propertyInfo in propertyInfos)
+            {
+                Console.WriteLine(propertyInfo.Name);
+            }
+
             Console.ReadLine();
         }
     }
