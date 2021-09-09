@@ -60,6 +60,48 @@ namespace ReflectionCSharpExample
                 Console.WriteLine(propertyInfo.Name);
             }
 
+            var interfaces = type3.GetInterfaces();
+            foreach (var @interface in interfaces)
+            {
+                Console.WriteLine(@interface.Name);
+            }
+            
+            foreach (var method in methodInfos)
+            {
+                var parameters = method.GetParameters();
+                foreach (var parameter in parameters)
+                {
+                    Console.WriteLine(parameter.Name);
+                    Console.WriteLine(parameter.ParameterType);
+                }
+            }
+
+            var type4 = typeof(Bus);
+
+            var constructors = type4.GetConstructors();
+
+            foreach (var constructorInfo in constructors)
+            {
+                Console.WriteLine(constructorInfo.ToString());
+            }
+
+            // You must supply a valid fully qualified assembly name here.              
+            var objAssembly = Assembly.Load("mscorlib");  
+            
+            Type[] Types = objAssembly.GetTypes();  
+         
+            foreach (Type objType in Types)  
+            {  
+                Console.WriteLine(objType.Name.ToString());  
+            }  
+            
+            Attribute[] arrayAttributes =  
+                Attribute.GetCustomAttributes(objAssembly);
+            foreach (Attribute attrib in arrayAttributes)  
+            {  
+                Console.WriteLine(attrib.TypeId);  
+            }  
+            
             Console.ReadLine();
         }
     }
