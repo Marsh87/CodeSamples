@@ -105,6 +105,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\PromiseExample.js" />
+    <Content Include="Scripts\thisKeywordExample.js" />
     <Content Include="Views\Home.html" />
     <Content Include="Views\PromiseExample.html" />
     <Content Include="Web.config" />
