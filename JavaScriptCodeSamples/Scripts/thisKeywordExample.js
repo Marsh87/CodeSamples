@@ -55,3 +55,37 @@ function show() {
 show();
 
 
+/*Method Invocation*/
+/*When you call a method of an object, JavaScript sets this to the object that owns the method. See the following car object:*/
+let car = {
+    brand: 'Mercedes',
+    getBrand: function () {
+        return this.brand;
+    }
+}
+
+console.log(car.getBrand());
+
+console.log(brand()); // undefined
+
+/*
+You get undefined instead of "Honda" because when you call a method without specifying its object, JavaScript sets this to the global object in non-strict mode and undefined in the strict mode.
+To fix this issue, you use the bind() method of the Function.prototype object. The bind() method creates a new function whose the this keyword is set to a specified value.
+* */
+let brand = car.getBrand.bind(car);
+console.log(brand()); // Mercedes
+
+/*In this example, the bind() method sets the this to the bike object, therefore, you see the value of the brand property of the bike object on the console.*/
+let vehicle = {
+    brand: 'Honda',
+    getBrand: function () {
+        return this.brand;
+    }
+}
+
+let bike = {
+    brand: 'Harley Davidson'
+}
+
+let manufacturer = car.getBrand.bind(bike);
+console.log(manufacturer());
