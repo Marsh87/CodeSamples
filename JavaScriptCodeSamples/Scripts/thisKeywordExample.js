@@ -89,3 +89,42 @@ let bike = {
 
 let manufacturer = car.getBrand.bind(bike);
 console.log(manufacturer());
+
+/*Constructor invocation*/
+/*When you use the new keyword to create an instance of a function object, you use the function as a constructor.
+
+The following example declares a Car function, then invokes it as a constructor:*/
+function Boat(brand) {
+    this.brand = brand;
+}
+
+Boat.prototype.getBrand = function () {
+    return this.brand;
+}
+
+let boat = new Boat('Illusion Plus');
+console.log(car.getBrand());
+/*JavaScript creates a new object and sets this to the newly created object. This pattern works great with only one potential problem.
+
+Now, you can invoke the Car() as a function or as a constructor. If you omit the new keyword as follows:*/
+
+let aurelia = Boat('aurelia')
+
+console.log(aurelia.brand);
+
+/*Since the this value in the Boat() sets to the global object, the aurelia.brand returns undefined.*/
+
+/*To make sure that the Boat() function is always invoked using constructor invocation, you add a check at the beginning of the Boat() function as follows:*/
+/*function Boat(brand) {
+    if (!(this instanceof Boat)) {
+        throw Error('Must use the new operator to call the function');
+    }
+    this.brand = brand;
+}*/
+/*ES6 introduced a meta-property named new.target that allows you to detect whether a function is invoked as a simple invocation or as a constructor.*/
+/*function Boat(brand) {
+    if (!new.target) {
+        throw Error('Must use the new operator to call the function');
+    }
+    this.brand = brand;
+}*/
