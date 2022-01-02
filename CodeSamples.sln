@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicTypeCSharpExample", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionCSharpExample", "ReflectionCSharpExample\ReflectionCSharpExample.csproj", "{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDataStructure", "TreeDataStructure\TreeDataStructure.csproj", "{91A22175-111E-4975-B289-BC65545B7A81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5BCE5A-295B-44CB-A6A2-5EE83FBACB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A22175-111E-4975-B289-BC65545B7A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A22175-111E-4975-B289-BC65545B7A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A22175-111E-4975-B289-BC65545B7A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A22175-111E-4975-B289-BC65545B7A81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
