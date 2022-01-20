@@ -38,6 +38,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Models\MergeSort.cs" />
         <Compile Include="Models\QuickSort.cs" />
         <Compile Include="Models\SelectionSort.cs" />
         <Compile Include="Program.cs" />
