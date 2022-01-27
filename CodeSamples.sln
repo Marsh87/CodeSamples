@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTreeDataStructure", "Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{00D627C3-3111-41F9-9EF9-426578C5FD99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchingAlgorithms", "SearchingAlgorithms\SearchingAlgorithms.csproj", "{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{00D627C3-3111-41F9-9EF9-426578C5FD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D627C3-3111-41F9-9EF9-426578C5FD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D627C3-3111-41F9-9EF9-426578C5FD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
