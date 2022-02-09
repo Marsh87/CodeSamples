@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "Sortin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchingAlgorithms", "SearchingAlgorithms\SearchingAlgorithms.csproj", "{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{7D5DF0B8-0C3C-47C8-A718-4553F65FA89A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "DesignPatterns\StrategyPattern\StrategyPattern.csproj", "{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,11 +61,18 @@ Global
 		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C876C34-679B-4CEB-91B5-4ED3E9E37C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {994FF6A5-168C-450A-89FE-FB360791F052}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{506C4EA0-C8D0-47F7-BB0D-4113AAFDE494} = {7D5DF0B8-0C3C-47C8-A718-4553F65FA89A}
 	EndGlobalSection
 EndGlobal
