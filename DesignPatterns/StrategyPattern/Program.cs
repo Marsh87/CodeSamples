@@ -7,6 +7,7 @@ namespace StrategyPattern
     {
         public static void Main(string[] args)
         {
+            /*https://www.c-sharpcorner.com/article/strategy-design-pattern-using-c-sharp/*/
             /*This pattern falls under the category of behavioral pattern and as the name suggests, it allows clients to choose an algorithm from a set of algorithms at run time.
              Strategy pattern defines a family of algorithms, encapsulates each one of them and makes them interchangeable at run time within that family.
               Family of Algorithms: This means this pattern provides a set of algorithms using one of which at run time you can achieve the desired output.
