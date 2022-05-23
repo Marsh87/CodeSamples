@@ -29,7 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "DesignPat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDesignPattern", "MVCDesignPattern\MVCDesignPattern.csproj", "{1D46CB56-8B2D-46CC-B5DD-8A3EA3FDC335}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDesignPattern", "MVVMDesignPattern\MVVMDesignPattern.csproj", "{942820F7-00B2-4BDB-9AD0-52DCFDBC30AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVMDesignPattern", "MVVMDesignPattern\MVVMDesignPattern.csproj", "{942820F7-00B2-4BDB-9AD0-52DCFDBC30AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandDesignPattern", "CommandDesignPattern\CommandDesignPattern.csproj", "{A00A80E7-F167-46AD-AC82-1B05960C2070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{942820F7-00B2-4BDB-9AD0-52DCFDBC30AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942820F7-00B2-4BDB-9AD0-52DCFDBC30AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942820F7-00B2-4BDB-9AD0-52DCFDBC30AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00A80E7-F167-46AD-AC82-1B05960C2070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00A80E7-F167-46AD-AC82-1B05960C2070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00A80E7-F167-46AD-AC82-1B05960C2070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00A80E7-F167-46AD-AC82-1B05960C2070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
